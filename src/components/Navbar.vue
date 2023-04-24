@@ -12,6 +12,8 @@
           <router-link :to="{ name: 'Profile', params: {user_id: id} }">User {{ id }}</router-link>
         </li>
     </ul>
+    <button @click="Contact">Contact</button>
+
   </div>
 
   </div>
@@ -24,6 +26,11 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       userIds: ['1', '2', '3', '4', '7', '11']
+    }
+  },
+  methods: {
+    Contact () {
+      this.$router.push({ name: 'Contact' })
     }
   }
 }
