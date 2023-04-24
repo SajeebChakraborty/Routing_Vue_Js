@@ -14,6 +14,9 @@
     </ul>
     <button @click="Contact">Contact</button>
 
+     <button @click="Back">Back</button>
+      <button @click="Forward">Forward</button>
+
   </div>
 
   </div>
@@ -31,6 +34,12 @@ export default {
   methods: {
     Contact () {
       this.$router.push({ name: 'Contact' })
+    },
+    Back () {
+      this.$router.go(-1)
+    },
+    Forward () {
+      this.$router.go(1)
     }
   }
 }
