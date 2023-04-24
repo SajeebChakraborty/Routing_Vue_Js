@@ -22,7 +22,7 @@ export default {
     }
   },
   watch: {
-    route: 'updateId'
+    $route: 'updateId'
   }
 }
 </script>
